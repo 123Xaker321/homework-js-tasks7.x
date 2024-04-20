@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, max-scale=1.0"
+    />
+    <title>Електронний годинник</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/clock-removebg-preview.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body id="main_container">
+    <div id="clockDisplay">
+      <div id="TimeWithoutMilliseconds">
+        <p id="hours"></p>
+        <p id="minutes"></p>
+        <p id="seconds"></p>
+      </div>
+      <p id="milliseconds"></p>
+    </div>
+    <div id="menu">
+      <button id="showMilliseconds" onclick="javascript: setShowMilliseconds()">
+        Показати мілісекунди
+      </button>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
