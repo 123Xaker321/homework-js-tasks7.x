@@ -3,11 +3,14 @@ function birthDateToAge(b){
     let n = new Date();
     b = new Date(b);
     age = n.getFullYear() - b.getFullYear();
-    months = b.getMonth();
+    months = 12 + (b.getMonth() - n.getMonth());
     let n_2000 = n.setFullYear(2000);
     let b_2000 = b.setFullYear(2000);
-    if(n_2000 < b_2000){
+    if(n_2000 > b_2000){
         age -= 1;
+    }
+    else{
+    months -= 12;
     }
 let ageLetters = age.toString().split("");
 if(age < 20 && age > 12)
